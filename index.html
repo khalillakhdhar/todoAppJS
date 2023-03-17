@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page d'accueil</title>
+</head>
+<body>
+	<label for="username">Nom d'utilisateur :</label>
+	<input type="text" id="username">
+	<button onclick="saveUsername()">Enregistrer</button>
+
+	<script>
+		function saveUsername() {
+			var username = document.getElementById("username").value;
+			localStorage.setItem("username", username);
+			window.location.href = "todo.html"; // redirect to todo.html
+		}
+	</script>
+</body>
+</html>
